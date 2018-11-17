@@ -33,3 +33,15 @@ console.log(jwonInfo.name);
 
 jwonInfo.age = 42;
 console.log(jwonInfo.age);
+
+
+
+console.log(console);
+
+
+function sayHello(poteto, checken) {
+    console.log("Hello!! ",poteto, "You have", checken, "ages of your");
+}
+
+sayHello("jwon", 15);
+sayHello("Nicolas",10);
