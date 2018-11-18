@@ -11,7 +11,7 @@ const OTHER_COLOR = 'yellow';
 
 function init(){
     title.style.color = BASE_COLOR;
-    title.addEventListener("click", changeColor);
+    title.addEventListener("click", changeColor);   //eventListener 는 init 할때 붙여주는 것이 좋다.
 }
 
 init();
