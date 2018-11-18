@@ -1,47 +1,21 @@
-//alert('Im working');
-console.log('Im working')
+
+
+const title = document.getElementById('title'); //get DOM getElementById
 
 
 
-let a = 100;
-console.log('let a is 100'+a);
-
-a= 10;
-console.log('change a is 10'+a);
-
-const b = 100;
-console.log(b);
-
-// b = 200 index.js:15 Uncaught TypeError: Assignment to constant variable. 발생
-console.log(b);
-
-const daysOfweek = ["MON", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", 56, true, false];  //is array
-
-console.log(daysOfweek);
-
-const jwonInfo = {
-    name :"Jwon",
-    age: 43,
-    gender: "Male",
-    isHandsome: true,
-    idlikeis: ["coffee", "bread","tea"]
-}   //is Object
-
-console.log(jwonInfo.age);
-console.log(jwonInfo.name);
+console.log(title);
+console.dir(title);
 
 
-jwonInfo.age = 42;
-console.log(jwonInfo.age);
+title.innerHTML = "Hi from JS";
+title.style.color = "red";
+
+console.dir(title);
+
+document.title = "I love u";
 
 
-
-console.log(console);
-
-
-function sayHello(poteto, checken) {
-    console.log("Hello!! ",poteto, "You have", checken, "ages of your");
-}
-
-sayHello("jwon", 15);
-sayHello("Nicolas",10);
+const title2 = document.querySelector('#title');    //get DOM get querySelector
+title2.innerHTML = "Hi from JS selector";
+title.style.color = "white";
