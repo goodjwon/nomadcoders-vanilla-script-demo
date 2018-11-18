@@ -63,3 +63,17 @@ const calculator = {
 
 const cal = calculator.plus(5,5);
 console.log(cal);
+;
+
+
+if("10"==10){
+    console.log("'10'== 10 is true");
+}
+
+if("10"===10){
+    console.log("'10' === 10 is true");
+}
+
+if ("10"==="10"){
+    console.log("'10' === '10' is true ");
+}
