@@ -5,3 +5,19 @@ body{
 h1{
     color: #fff1fa;
 }
+
+.btn{
+    cursor: pointer;
+}
+
+.click{
+    color: chartreuse;
+}
+
+.form, greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
