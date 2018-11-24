@@ -1,7 +1,23 @@
 body{
-    background-color: blue;
+    background-color: #6899ff;
 }
 
 h1{
-    color: azure;
+    color: #fff1fa;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.click{
+    color: chartreuse;
+}
+
+.form, greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
 }
