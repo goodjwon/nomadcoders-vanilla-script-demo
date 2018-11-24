@@ -5,7 +5,19 @@ const todoList = document.querySelector(".js-todoList");
 
 const TODOS_LS = 'toDos'
 
-const todos = [];
+let todos = [];
+
+function deleteTodo(event) {
+    const btn = event.target;
+    const li = btn.parentNode;
+    todoList.removeChild(li);
+    const cleanTodo = todos.filter((todo) => {
+        return todo.id !== parseInt(li.id);
+    })
+    todos = cleanTodo;
+
+    saveStroage();
+}
 
 function saveStroage() {
     localStorage.setItem(TODOS_LS, JSON.stringify(todos));
@@ -17,6 +29,7 @@ function paintDoto(text) {
     const span = document.createElement("span");
     const newId = todos.length+1
     deleteButton.innerText = "❌";
+    deleteButton.addEventListener("click", deleteTodo);
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(deleteButton);
