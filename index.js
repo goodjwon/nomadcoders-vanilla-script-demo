@@ -26,7 +26,7 @@ function changeColor(){
 
 
 /**
- Event List
+ Event List (https://developer.mozilla.org/en-US/docs/Web/Events) search key word "javascript dom event mdn"
      click – 마우스버튼을 클릭하고 버튼에서 손가락을 떼면 발생한다.
      mouseover – 마우스를 HTML요소 위에 올리면 발생한다.
      mouseout – 마우스가 HTML요소 밖으로 벗어날 때 발생한다.
