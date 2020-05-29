@@ -133,26 +133,20 @@ const remlainder = (a, b)=>{
 
 const calculate = (command, a, b)=>{
     
-    let result
     switch(command){
         case 'add':
-        result = add(a, b)
-            break;
+            return add(a, b)
         case 'substract':
-        result =    substract(a, b)
-            break;
+            return substract(a, b)
         case 'divide':
-        result =   divide(a, b)
-            break;
+            return  divide(a, b)
         case 'multiply':
-        result =   multiply(a, b)
-            break;
+            return multiply(a, b)
         case 'remlainder':
-        result =    remlainder(a, b)
-            break;
+            return remlainder(a, b)
+        default:
+            throw Error('unkonwn commad')
     }
-
-    return result
 }
 
 console.log(calculate('substract', 1, 3))
